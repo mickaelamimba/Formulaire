@@ -8,9 +8,77 @@
 
 </head>
 <body>
-<h1>Formulaire</h1>
+<h1 class="text-center">Formulaire</h1>
 <main>
   <div class="container d-flex flex-column min-vh-100 justify-content-center align-items-center">
+      <form class="row g-3 needs-validation" id="lessonForm" novalidate>
+          <div class="col-md-6">
+              <label class="form-label" for="firstName">Prénom</label>
+              <input class="form-control" type="text" name="firstName" id="firstName">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre prénom.
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="lastName">Nom</label>
+              <input class="form-control" type="text" name="lastName" id="lastName">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre nom.
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-control" type="text" name="" id="email">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre e-mail.
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="phoneNumber">Téléphone</label>
+              <input class="form-control" type="text" name="phoneNumber" id="phoneNumber">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre numero de téléphone
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="address">Adresse</label>
+              <input class="form-control" type="text" name="address" id="address">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre adresse
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="city">Ville</label>
+              <select class="form-select" name="city" id="city">
+                  <option selected disabled value="">Choose a city...</option>
+                  <option>Paris</option>
+                  <option>Lyon</option>
+                  <option>Marseille</option>
+                  <option>Lile</option>
+              </select>
+              <div class="invalid-feedback">
+                  Veuillez choisire ne ville.
+              </div>
+          </div>
+          <div class="col-md-6">
+              <label class="form-label" for="postCode">Code postal</label>
+              <input class="form-control" type="text" name="postCode" id="postCode">
+              <div class="invalid-feedback">
+                  Veuillez saisir votre code postal.
+              </div>
+          </div>
+          <div class="col-12">
+              <div class="mb-3 form-check">
+                  <label for="conditions" class="form-check-label">J'accepte les conditions</label>
+                  <input type="checkbox" class="form-check-input" name="conditions" id="conditions">
+                  <div class="invalid-feedback">
+                     Merci de lire les conditions avant de valider le formulaire .
+                  </div>
+
+              </div>
+          </div>
+          <button class="bn btn-primary w-25" type="submit">Valider</button>
+      </form>
 
   </div>
 </main>
